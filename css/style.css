@@ -25,7 +25,7 @@ body {
 }
 
 .infor-perfil {
-  margin: 30px 0;
+  margin-top: 20px;
 }
 
 .infor-perfil h2,
@@ -44,83 +44,18 @@ body {
   margin-top: 5px;
 }
 
-.redes-sociais i {
-  color: #fff;
-  margin: 0 5px;
-}
-
-.redes-sociais i:hover {
-  color: #00E9EE;
-  cursor: pointer;
-}
-
-.text {
-  font-family: "Poppins", sans-serif;
-  font-weight: 500;
-  text-align: center;
-  color: #fff;
-  margin: 30px 0;
-}
-
-.buttons {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-.buttons .curriculo {
-  background-color: #00E9EE;
-  padding: 20px 40px;
-  border-radius: 5px;
-  margin-right: 30px;
-  cursor: pointer;
-}
-
-.buttons .curriculo:hover {
-  box-shadow: rgba(0, 233, 238, 0.2) 0px 7px 29px 0px;
-}
-
-.buttons .curriculo a {
-  font-family: "Poppins", sans-serif;
-  font-weight: 700;
-  text-align: "";
-  color: #1F2A33;
-  font-family: "Poppins", sans-serif;
-  text-decoration: none;
-}
-
-.buttons .curriculo i {
-  margin-left: 10px;
-}
-
-.buttons .sociais-whatsapp,
-.buttons .sociais-email {
-  padding: 15px;
-  background-color: #171F26;
-  border-radius: 5px;
-  cursor: pointer;
-  margin: 0 4px;
-}
-
-.buttons .sociais-whatsapp:hover,
-.buttons .sociais-email:hover {
-  background-color: #1F2A33;
-}
-
-.buttons .sociais-whatsapp i, .sociais-email i {
-  color: #fff;
-}
-
 .skills {
   margin-top: 20px;
-  background-color: #171F26;
   border-radius: 10px;
   padding: 5px 0;
 }
 
 .skills .perfil-skills {
+  width: 600px;
   display: flex;
+  flex-direction: column;
   justify-content: space-between;
+  text-align: center;
 }
 
 .skills .perfil-skills a {
@@ -136,71 +71,31 @@ body {
   cursor: pointer;
 }
 
-.skills .perfil-skills .ativo {
-  background-color: #0C151D;
+.skills .perfil-skills a{
+  text-decoration: none;
+  background-color: #171F26;
+  border: 1px solid #00E9EE;
+  margin: 8px 0;
 }
 
-.show-projetos {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-wrap: wrap;
-  margin-top: 50px;
+.skills .perfil-skills a:hover{
+  background-color: #00E9EE;
+  color: #000;
 }
 
-.show-projetos img {
-  width: 450px;
-  margin: 20px;
-  border-radius: 10px;
-  filter: grayscale(100%);
-}
-.show-projetos img:hover {
-  filter: grayscale(0%);
+.redes-sociais{
+  margin-top: 20px;
 }
 
-.show-habilidades {
-  display: none;
-  font-family: "Poppins", sans-serif;
-  font-weight: "";
-  text-align: "";
-  color: #fff;
-  margin-top: 50px;
-}
-
-.show-habilidades h4 {
-  font-family: "Poppins", sans-serif;
-  font-weight: 600;
-  text-align: center;
-  color: "";
-  font-family: "Poppins", sans-serif;
-  margin-bottom: 40px;
+.redes-sociais i {
   font-size: 20px;
+  color: #fff;
+  margin: 0 5px;
 }
 
-.show-habilidades .list {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: row;
-  font-family: "Poppins", sans-serif;
-  font-weight: 600;
-  font-size: 15px;
-}
-
-.list div i {
-  font-size: 10px;
+.redes-sociais i:hover {
   color: #00E9EE;
-  margin: 10px;
-  border: 2px solid #00E9EE;
-  border-radius: 50%;
-  padding: 2px;
-}
-
-.list div:nth-child(1),
-.list div:nth-child(2) {
-  display: flex;
-  flex-direction: column;
-  width: 150px;
+  cursor: pointer;
 }
 
 footer {
@@ -212,7 +107,17 @@ footer {
   margin: 20px 0;
 }/*# sourceMappingURL=style.css.map */
 
+@media screen and (max-width: 630px){
+  .skills .perfil-skills{
+    width: 400px;
+  }
+}
+
 @media (min-width: 401px) and (max-width: 490px) {
+  .skills .perfil-skills{
+    width: 320px;
+  }
+
   .text{
     padding: 0 25px;
   }
@@ -223,6 +128,10 @@ footer {
 }
 
 @media (max-width: 400px) {
+  .skills .perfil-skills{
+    width: 300px;
+  }
+
   .text{
     padding: 0 25px;
   }
